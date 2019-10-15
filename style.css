@@ -1,0 +1,25 @@
+body{
+  background-color: Cornsilk;
+}
+
+#heading{
+  color:darkmagenta;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card2 h3{
+  text-align: center;
+  color: RoyalBlue;
+}
+
+.card2 {
+  background-color: BlanchedAlmond;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+  align: center;
+  border: 2px solid RoyalBlue;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
