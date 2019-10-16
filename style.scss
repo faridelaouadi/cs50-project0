@@ -1,73 +1,80 @@
-.image_set {
+$defaultBlue: RoyalBlue;
+
+%image_default {
   max-width: 100%;
-  padding: 10px;
-  border: 3px solid black;
+  padding:10px;
+  border:  3px solid black;
 }
 
-body {
+body{
   background-color: Cornsilk;
 }
 
-#heading {
-  color: darkmagenta;
+#heading{
+  color:darkmagenta;
   text-align: center;
   padding-top: 10px;
 }
 
-.second-col {
+.second-col{
   text-align: center;
   vertical-align: middle;
   color: darkmagenta;
 }
 
-.card2 {
+.card2{
   background-color: BlanchedAlmond;
   padding: 10px;
   width: 70%;
   margin: auto;
   align: center;
-  border: 2px solid RoyalBlue;
+  border: 2px solid $defaultBlue;
   border-radius: 20px;
   margin-bottom: 20px;
-}
-.card2 h3 {
-  text-align: center;
-  color: RoyalBlue;
-}
-.card2 table, .card2 th, .card2 td {
-  border: 1px solid black;
-  padding: 5px;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-.card2 td:nth-child(n+2) {
-  background: pink;
-  border: none;
-}
-.card2 td:nth-child(n+2):hover {
-  background: yellow;
-  border: none;
+
+  h3{
+    text-align: center;
+    color: $defaultBlue;
+  }
+  table,th,td{
+    border: 1px solid black;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  td:nth-child(n+2) {
+    background: pink;
+    border: none;
+  }
+  td:nth-child(n+2):hover {
+    background: yellow;
+    border: none;
+  }
 }
 
-.popup {
-  display: none;
+.image_set{
+  @extend %image_default;
+}
+
+.popup{
+  display:none;
 }
 
 @media only screen and (max-width: 900px) {
-  .popup {
-    display: block;
+  .popup{
+    display:block;
     text-align: center;
   }
 
-  .popup:hover {
+  .popup:hover{
     border: 1px solid black;
   }
-
-  .card2 table {
-    display: none;
+  .card2 table{
+    display:none;
   }
 }
+
 .container-w3 {
   position: relative;
   width: 100%;
@@ -88,7 +95,7 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: .5s ease;
   background-color: #008CBA;
 }
 
@@ -107,5 +114,3 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-/*# sourceMappingURL=style.css.map */
